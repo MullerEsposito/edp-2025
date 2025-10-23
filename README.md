@@ -1,85 +1,81 @@
-# 📝 ToDoList Smart Contract
-
-## 📖 Description
-
-**ToDoList** is a smart contract developed in **Solidity** to manage tasks directly on the blockchain.  
-It allows users to **add**, **list**, and **remove** tasks in a decentralized and transparent way.  
-Each task contains a **description** and a **timestamp** (creation time), permanently stored on-chain.
-
-This project was developed for educational purposes and demonstrates the use of structs, dynamic arrays, and events in Solidity.
+# ⚡ Ethereum Developer Pack (EDP) — Bootcamp Projects
 
 ---
 
-## 🧱 Contract Structure
+## 📖 Overview
 
-### Main Functions
+This repository contains all the projects developed during the **Ethereum Developer Pack (EDP)** bootcamp — a complete learning journey focused on **blockchain development** using **Solidity**, **smart contracts**, and **Ethereum-based tools**.
 
-| Function | Description |
-|-----------|--------------|
-| `setTarefa(string _descricao)` | Adds a new task to the list. |
-| `deletarTarefa(string _descricao)` | Removes an existing task by its description. |
-| `getTarefa()` | Returns all tasks stored in the contract. |
-
-### Events
-
-| Event | Description |
-|--------|--------------|
-| `ToDoList_TarefaAdiciona(Tarefa tarefa)` | Emitted when a new task is added. |
-| `ToDoList_TarefaCompletadaERemovida(string _descricao)` | Emitted when a task is completed and removed. |
+Each project within this repository represents a milestone in the learning process, covering topics such as:
+- Smart contract design and security
+- Decentralized application (dApp) development
+- Deployment to Ethereum test networks (e.g., Sepolia, Goerli)
+- Usage of Remix IDE, Hardhat, and MetaMask
+- CCIP (Cross-Chain Interoperability Protocol)
 
 ---
 
-## ⚙️ How to Clone and Run
+## 🧭 Repository Structure
 
-### 🔧 Prerequisites
+Each folder in the root directory corresponds to a specific project developed during the bootcamp.
 
-- [Node.js](https://nodejs.org/)
-- [Git](https://git-scm.com/)
-- [Remix IDE](https://remix.ethereum.org/) or [Hardhat](https://hardhat.org/)
-- MetaMask extension configured for your desired test network (optional)
-
-### 💻 Cloning the Project
-
-```bash
-# Clone this repository
-git clone https://github.com/your-username/todolist-solidity.git
-
-# Enter the directory
-cd todolist-solidity
+```
+edp-bootcamp-projects/
+│
+├── Register/
+├── RegisterAccess/
+├── Token/
+├── TokenShop/
+├── StableCoin/
+├── MyNFT/
+├── CrossChainPriceNFT/
+├── CrossDestinationMinter/
+├── CrossSourceMinter/
+└── README.md # This file
 ```
 
-### ▶️ Running on Remix IDE
+---
 
-1. Go to: [https://remix.ethereum.org/](https://remix.ethereum.org/)
-2. Click **File Explorer → Upload Files**
-3. Upload the `ToDoList.sol` file  
-4. Go to **Solidity Compiler**:
-   - Select version **0.8.26**
-   - Click **Compile ToDoList.sol**
-5. Go to **Deploy & Run Transactions**:
-   - Choose your preferred environment (`Remix VM`, `Injected Provider` with MetaMask, or `Sepolia Testnet`)
-   - Click **Deploy**
-6. After deployment, interact with the contract:
-   - Add tasks using `setTarefa`
-   - List tasks using `getTarefa`
-   - Delete tasks using `deletarTarefa`
+## 🧱 Project Summaries
+
+| Project | Description | Key Topics |
+|----------|--------------|-------------|
+| **Register** | Simple smart contract to register an information on-chain | storage |
+| **RegisterAccess** | Simple smart contract to register an information on-chain with control access | access control |
+| **Token** | Smart contract token ERC20 | Fungible Token, Transfer Logic |
+| **TokenShop** | Smart contract to shop the ERC20 tokens | Oracle |
+| **StableCoin** | Smart contract that create an USD stable coin  | Oracle, Colateral, Liquidation |
+| **MyNFT** | Smart contract NFT | Non Fungible Token, Minting |
+| **CrossChainPriceNFT** | A dynamic NFT smart contract that generate SVG images based on the last price of the Bitcoin | CCIP |
+| **CrossDestinationMinter** | A CCIP receptor that listen for calls of another chains and forward these calls for the CrossChainPriceNFT | CCIP |
+| **CrossSourceMinter** | A CCIP sender that transmits calls to a CrossChainPriceNFT CCIP receptor | CCIP |
+
 
 ---
 
-### 🔗 Contract Access on Block Explorer
+## 🧰 Technologies Used
 
-Contract deployed on: **Etherscan / Sepolia Testnet**
+| Technology | Purpose |
+|-------------|----------|
+| **Solidity** | Smart contract programming |
+| **Remix IDE** | Writing and testing contracts directly in the browser |
+| **Hardhat** | Local blockchain simulation and contract deployment |
+| **MetaMask** | Wallet for blockchain interactions |
+| **Ethers.js / Web3.js** | Libraries for interacting with Ethereum |
+| **Sepolia Testnet** | Ethereum test network for deployment and verification |
 
 ---
 
-### 👨‍💻 Author
+## 🚀 Getting Started
 
-**Müller Esposito**  
-📧 Contact: [@mulleresposito](https://github.com/mulleresposito)
+To clone this repository and explore the projects locally:
 
----
+```bash
+# Clone the repository
+git clone https://github.com/your-username/edp-bootcamp-projects.git
 
-### ⚖️ License
+# Navigate into the repository
+cd edp-bootcamp-projects
 
-This project is licensed under the **MIT License**.  
-Refer to the SPDX header in the contract or read more here: [MIT License](https://opensource.org/licenses/MIT)
+# Open any project folder
+cd ToDoList
