@@ -68,7 +68,7 @@ cd todolist-solidity
 
 ### 🔗 Contract Access on Block Explorer
 
-Contract deployed on: **Etherscan / Sepolia Testnet**
+Contract deployed on: [**Etherscan / Sepolia Testnet**](https://sepolia.etherscan.io/address/0x082eee9ef1fbe5cf480335083a6b99cd9a2267b3)
 
 ---
 
