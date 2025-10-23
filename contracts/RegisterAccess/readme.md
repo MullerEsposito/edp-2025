@@ -111,9 +111,8 @@ This project demonstrates key Solidity concepts such as:
 ## 🔗 Example Deployment
 
 > Contract deployed on **Sepolia Testnet** (example):  
-> [https://sepolia.etherscan.io/address/PASTE_CONTRACT_ADDRESS_HERE](https://sepolia.etherscan.io/)
+> [https://sepolia.etherscan.io/address/0x1Af944Da8e3CA52Ae5539A779fB76bAFcA4dBe5a](https://sepolia.etherscan.io/address/0x1Af944Da8e3CA52Ae5539A779fB76bAFcA4dBe5a)
 
-*(Replace the link with your actual deployed address.)*
 
 ---
 

@@ -63,7 +63,7 @@ This project is designed for **educational purposes**, introducing the basic con
 ## 🔗 Example (Optional)
 
 > Example deployment on **Sepolia Testnet**:  
-> [https://sepolia.etherscan.io/address/PASTE_CONTRACT_ADDRESS_HERE](https://sepolia.etherscan.io/)
+> [https://sepolia.etherscan.io/address/0x59854F6e6a3f74EA60454D7326518cBC0f553137](https://sepolia.etherscan.io/0x59854F6e6a3f74EA60454D7326518cBC0f553137)
 
 *(Replace with your real contract address after deployment.)*
 
