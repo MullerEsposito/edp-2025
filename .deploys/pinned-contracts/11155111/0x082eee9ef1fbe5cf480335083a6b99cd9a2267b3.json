@@ -1,0 +1,121 @@
+{
+  "name": "ToDoList",
+  "address": "0x082eee9ef1fbe5cf480335083a6b99cd9a2267b3",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_descricao",
+          "type": "string"
+        }
+      ],
+      "name": "deletarTarefa",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_descricao",
+          "type": "string"
+        }
+      ],
+      "name": "setTarefa",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "descricao",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tempoDeCricao",
+              "type": "uint256"
+            }
+          ],
+          "indexed": false,
+          "internalType": "struct ToDoList.Tarefa",
+          "name": "tarefa",
+          "type": "tuple"
+        }
+      ],
+      "name": "ToDoList_TarefaAdiciona",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_descricao",
+          "type": "string"
+        }
+      ],
+      "name": "ToDoList_TarefaCompletadaERemovida",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "getTarefa",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "descricao",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tempoDeCricao",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct ToDoList.Tarefa[]",
+          "name": "tarefa_",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "s_tarefas",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "descricao",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tempoDeCricao",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "filePath": "default_workspace/contracts/ToDoList/ToDoList.sol",
+  "pinnedAt": 1761232973684
+}

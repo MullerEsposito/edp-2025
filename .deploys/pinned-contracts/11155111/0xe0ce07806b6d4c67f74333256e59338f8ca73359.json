@@ -1,0 +1,131 @@
+{
+  "name": "Donations",
+  "address": "0xe0ce07806b6d4c67f74333256e59338f8ca73359",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "doe",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_beneficiario",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "chamador",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "beneficiario",
+          "type": "address"
+        }
+      ],
+      "name": "Donations_SacadorNaoPermitido",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "erro",
+          "type": "bytes"
+        }
+      ],
+      "name": "Donations_TrasacaoFalhou",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "doador",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "valor",
+          "type": "uint256"
+        }
+      ],
+      "name": "Donations_DoacaoRecebida",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "recebedor",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "valor",
+          "type": "uint256"
+        }
+      ],
+      "name": "Donations_SaqueRealizado",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_valor",
+          "type": "uint256"
+        }
+      ],
+      "name": "saque",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "nonpayable",
+      "type": "fallback"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usuario",
+          "type": "address"
+        }
+      ],
+      "name": "s_doacoes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "valor",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "filePath": "default_workspace/contracts/Donations/Donations.sol",
+  "pinnedAt": 1761242705995
+}
