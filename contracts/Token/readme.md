@@ -99,9 +99,8 @@ You can call the following functions:
 ## 🔗 Example Deployment
 
 > **Example (Sepolia Testnet):**  
-> [https://sepolia.etherscan.io/address/PASTE_CONTRACT_ADDRESS_HERE](https://sepolia.etherscan.io/address/PASTE_CONTRACT_ADDRESS_HERE)  
->
-> *(Replace with your actual deployed address after deployment.)*
+> [https://sepolia.etherscan.io/address/0x3c3C4d421F06109E3030604EA6D0795A189aD341](https://sepolia.etherscan.io/address/0x3c3C4d421F06109E3030604EA6D0795A189aD341)  
+
 
 ---
 
