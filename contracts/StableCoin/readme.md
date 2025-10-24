@@ -74,12 +74,12 @@ npx hardhat compile
 ## 🚀 Deployment (Hardhat example)
 
 ```js
-const [deployer] = await ethers.getSigners();
-const MullerStable = await ethers.getContractFactory("MullerStable");
-const usdmul = await MullerStable.deploy();
-await usdmul.deployed();
+    const [deployer] = await ethers.getSigners();
+    const MullerStable = await ethers.getContractFactory("MullerStable");
+    const usdmul = await MullerStable.deploy();
+    await usdmul.deployed();
 
-console.log("USDMUL deployed at:", usdmul.address);
+    console.log("USDMUL deployed at:", usdmul.address);
 ```
 > ⚠️ If you deploy to a network other than Sepolia, update the price feed address in the constructor.
 
@@ -88,31 +88,32 @@ console.log("USDMUL deployed at:", usdmul.address);
 ## 🧾 Example Usage
 
 ```js
-// 1) Read token metadata
-console.log(await usdmul.name());      // "Muller Stable"
-console.log(await usdmul.symbol());    // "USDMUL"
-console.log(await usdmul.decimals());  // 2
 
-// 2) Estimate how much USDMUL you'd mint for 0.5 ETH
-const estimate = await usdmul.estimateMintAmount(
-  ethers.utils.parseEther("0.5")
-);
-console.log("Estimated USDMUL:", estimate.toString());
+    // 1) Read token metadata
+    console.log(await usdmul.name());      // "Muller Stable"
+    console.log(await usdmul.symbol());    // "USDMUL"
+    console.log(await usdmul.decimals());  // 2
 
-// 3) Deposit 0.5 ETH and mint
-await usdmul.connect(user).depositAndMint({ value: ethers.utils.parseEther("0.5") });
+    // 2) Estimate how much USDMUL you'd mint for 0.5 ETH
+    const estimate = await usdmul.estimateMintAmount(
+        ethers.utils.parseEther("0.5")
+    );
+    console.log("Estimated USDMUL:", estimate.toString());
 
-// 4) Check user position
-const pos = await usdmul.positions(user.address);
-console.log("Collateral (wei):", pos.collateralETH.toString());
-console.log("Debt (USDMUL, 2 decimals):", pos.stablecoinDebt.toString());
+    // 3) Deposit 0.5 ETH and mint
+    await usdmul.connect(user).depositAndMint({ value: ethers.utils.parseEther("0.5") });
 
-// 5) Estimate ETH to withdraw if burning 100.00 USDMUL
-const ethBack = await usdmul.estimateWithdrawETH(100); // 100 = $100.00
-console.log("ETH to receive:", ethBack.toString());
+    // 4) Check user position
+    const pos = await usdmul.positions(user.address);
+    console.log("Collateral (wei):", pos.collateralETH.toString());
+    console.log("Debt (USDMUL, 2 decimals):", pos.stablecoinDebt.toString());
 
-// 6) Burn and withdraw
-await usdmul.connect(user).burnAndWithdraw(100);
+    // 5) Estimate ETH to withdraw if burning 100.00 USDMUL
+    const ethBack = await usdmul.estimateWithdrawETH(100); // 100 = $100.00
+    console.log("ETH to receive:", ethBack.toString());
+
+    // 6) Burn and withdraw
+    await usdmul.connect(user).burnAndWithdraw(100);
 ```
 
 ---
@@ -184,8 +185,8 @@ await usdmul.connect(user).burnAndWithdraw(100);
 
 ## 🧑‍💻 Author
 
-Developed for **MULLER NFT EDP Online 2025**  
-Created with ❤️ using Solidity, OpenZeppelin, and Chainlink.  
+Developed for **MULLER ESPOSITO**  
+Created using Solidity, OpenZeppelin, and Chainlink.  
 
 ---
 
